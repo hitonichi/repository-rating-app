@@ -9,6 +9,7 @@ const styles = StyleSheet.create({
   main: {
     backgroundColor: "gray",
     height: "100%",
+    width: "100%",
   },
 });
 

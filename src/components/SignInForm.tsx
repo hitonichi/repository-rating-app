@@ -37,6 +37,8 @@ const SignInForm = ({ onSubmit }: PropTypes) => {
         style={[styles.formEle, styles.input]}
         name="password"
         placeholder="Your password"
+        textContentType="password"
+        secureTextEntry={true}
       />
       <Pressable
         style={[styles.formEle, styles.submitBtn]}
