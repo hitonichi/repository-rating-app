@@ -10,11 +10,12 @@ const styles = StyleSheet.create({
   formEle: {
     height: 40,
     margin: 12,
-    borderRadius: 8,
+    borderRadius: 4,
     padding: 8,
   },
   input: {
     borderWidth: 1,
+    borderColor: "gray",
   },
   submitBtn: {
     backgroundColor: "#0954a5",
@@ -44,7 +45,11 @@ const SignInForm = ({ onSubmit }: PropTypes) => {
         style={[styles.formEle, styles.submitBtn]}
         onPress={() => onSubmit()}
       >
-        <Text style={{ color: "white", fontWeight: "bold" }}>Sign in</Text>
+        <Text
+          style={{ color: "white", fontWeight: "bold", textAlign: "center" }}
+        >
+          Sign in
+        </Text>
       </Pressable>
     </View>
   );
